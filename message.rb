@@ -6,10 +6,10 @@ class Message
   end
   
   def plaintext
-    split_into_groups.join(" ")
+    groups.join(" ")
   end
   
-  def split_into_groups
+  def groups
     @groups = []
     group_count.times do |grp|
       start = grp * GROUP_LENGTH
@@ -17,6 +17,8 @@ class Message
     end
     @groups
   end
+  
+  private
   
   def group_count
     (pad.length / GROUP_LENGTH).floor
