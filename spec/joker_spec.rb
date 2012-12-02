@@ -1,3 +1,4 @@
+require 'spec_helper'
 require_relative '../joker'
 
 describe Joker do

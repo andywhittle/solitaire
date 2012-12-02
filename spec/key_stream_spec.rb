@@ -1,3 +1,4 @@
+require 'spec_helper'
 require_relative '../key_stream'
 
 describe KeyStream do
